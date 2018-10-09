@@ -1,0 +1,214 @@
+/* Custom Fonts*/
+
+@font-face {
+    font-family: 'true_lies';
+    src: url('Fonts/true_lies-webfont.eot');
+    src: url('Fonts/true_lies-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/true_lies-webfont.woff2') format('woff2'),
+         url('Fonts/true_lies-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'alexandria';
+    src: url('Fonts/alexandriaflf-webfont.eot');
+    src: url('Fonts/alexandriaflf-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/alexandriaflf-webfont.woff2') format('woff2'),
+         url('Fonts/alexandriaflf-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*--------------------------------------------------------------*/
+
+
+body{
+    background: #b5d9fd;
+}
+
+h1{
+    
+    padding:7.5vw 0 1vh;
+    text-align: center;
+    font-family: 'true_lies'; 
+    color: #dd9475;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+    
+p , #message{
+    text-align: center;
+    font-family: 'alexandria';
+    font-size: .70em;
+    font-weight: 700;
+    
+}
+
+
+.gameTile{
+    height:67px;
+    width: 67px;
+    border: #dd9475 2px solid;
+    margin:0;
+    padding: 0;
+   
+}
+
+.cardImg{
+    width=100%;
+    height=100%;
+    overflow:hidden;
+    
+}
+
+
+
+
+#container{
+    position: absolute;
+    height: 274px;
+    width: 274px;
+    border:  #dd9475 3px solid;
+    
+}
+
+
+#gamePlay{
+    position: absolute;
+    padding-left:15.5vw;
+    
+}
+
+#controls{
+
+    margin: 53vh 20vw 0vh;
+    text-align: center;
+}
+
+#controls #time, #controls #count{
+    display: inline;  
+    padding-left: 3vw;
+    font-family: 'alexandria';
+    font-weight: 700;
+    font-size: .73em;
+}
+
+
+#controls #gameControl{
+   
+    margin: 5vh, 20vw 1vh 50vw;
+    font-family: 'alexandria';
+    border: #dd9475 3px solid;
+    font-weight: 700;
+    font-size: .73em;
+}
+
+
+/**** Media queries ****/
+
+
+@media only screen and (min-width: 568px){
+    
+    h1{
+        font-size: 2em;
+        padding: 5vh 0 1vh;;
+    }
+    p , #message{
+        font-size: 1em;
+    } 
+    #gamePlay{
+        padding-left: 23vw;
+    }
+    #container{
+        height: 318px;
+        width: 318px;
+    } 
+    .cardImg{
+        width:75px;
+        height:75px;
+    }
+    .gameTile{
+        width:78px;
+        height:78px;   
+    }
+    
+    #controls{
+        margin: 60vh 4vw 5vh;
+        font-size: 1em;
+    }
+}
+    
+
+@media only screen and (min-width: 768px){
+    
+    h1{
+        font-size: 2.5em;
+    }
+ 
+    
+    #gamePlay{
+        padding-left: 25vw;
+    }
+    #container{
+        height: 355px;
+        width: 355px;
+        
+    } 
+    .cardImg{
+        width:85px;
+        height:85px;
+    }
+    .gameTile{
+        width:87px;
+        height:87px;   
+    }
+    
+    #controls{
+        margin: 65vh 4vw 0vh;
+        font-size:1.25em;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    
+    h1{
+    font-size: 3em;
+    padding:1vh 0 1vh;
+    }
+    
+    p , #message{
+    font-size: 1.25em;
+    
+    }
+
+    .gameTile{
+    height:90px;
+    width: 90px;  
+    }
+
+
+    #container{
+    height: 366px;
+    width: 366px;
+    }
+
+
+    #gamePlay{
+    padding-left: 35.3vw;
+    
+    }
+
+    #controls{
+
+    margin: 65vh 30vw 0vh;
+    }
+   
+    #controls #time, #controls #count{ 
+    padding-left: 2vw;
+}
+
+
+
